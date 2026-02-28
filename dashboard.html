@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | VishLearn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="logo"><i class="fa-solid fa-graduation-cap"></i> VishLearn</div>
+        <ul class="sidebar-menu">
+            <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-medal"></i> Olympiad Trainer</a></li>
+            <li><a href="#"><i class="fa-solid fa-project-diagram"></i> Flow Charts</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> Last Minute Rev.</a></li>
+            <li><a href="#"><i class="fa-solid fa-brain"></i> Quizzes</a></li>
+            <li><a href="#"><i class="fa-solid fa-newspaper"></i> Current Affairs</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p class="company-tag">By Sudarshan Labs</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="welcome-text">
+                <h2>Welcome back, Student! 👋</h2>
+                <p>Your Olympiad goal is 70% complete.</p>
+            </div>
+            <div class="header-widgets">
+                <div class="gamification-badge streak"><i class="fa-solid fa-fire"></i> 5 Day Streak</div>
+                <div class="gamification-badge xp"><i class="fa-solid fa-star"></i> 1,240 XP</div>
+                <button id="theme-toggle-dash" class="icon-btn"><i class="fa-solid fa-moon"></i></button>
+                <div class="profile-avatar">S</div>
+            </div>
+        </header>
+
+        <div class="grid-container stats-grid">
+            <div class="card stat-card highlight-card olympiad-bg">
+                <div class="stat-info">
+                    <p>Next Olympiad Mock</p>
+                    <h3>Maths - Level 2</h3>
+                    <button class="btn primary-btn small-btn mt-1">Start Now</button>
+                </div>
+                <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+            </div>
+            <div class="card stat-card highlight-card flowchart-bg">
+                <div class="stat-info">
+                    <p>Visual Learning</p>
+                    <h3>Science Flow Charts</h3>
+                    <button class="btn secondary-btn small-btn mt-1">View Library</button>
+                </div>
+                <div class="stat-icon"><i class="fa-solid fa-sitemap"></i></div>
+            </div>
+            <div class="card stat-card highlight-card lmr-bg">
+                <div class="stat-info">
+                    <p>Exam Tomorrow?</p>
+                    <h3>Last Minute Revision</h3>
+                    <button class="btn secondary-btn small-btn mt-1">Select Chapter</button>
+                </div>
+                <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+            </div>
+        </div>
+
+        <div class="grid-container dashboard-actions">
+            <div class="card list-card">
+                <h3>Pending Tasks <span class="badge">2 Left</span></h3>
+                <ul class="task-list">
+                    <li>
+                        <span><i class="fa-solid fa-clock-rotate-left text-primary"></i> Revise Gravitation Formulas (LMR)</span>
+                        <button class="btn primary-btn small-btn action-trigger">Revise</button>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-project-diagram text-primary"></i> Study 'Cell Structure' Flow Chart</span>
+                        <button class="btn primary-btn small-btn action-trigger">Study</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card chart-card">
+                <h3>AI Recommendation</h3>
+                <div class="ai-suggestion">
+                    <i class="fa-solid fa-robot ai-icon"></i>
+                    <p>You struggled with <strong>Logical Reasoning</strong> in Olympiad Prep. Want to revise via a flow chart?</p>
+                    <button class="btn primary-btn w-100 mt-1 action-trigger">Generate Visual Guide</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
